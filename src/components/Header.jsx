@@ -11,13 +11,13 @@ const CONFIG = {
   // --- Logo ---
   logoAlto: 60,
   logoAncho: 170,
-  logoZoom: 1.5,
+  logoZoom: 1,
   logoFondo: true,
   logoColorFondo: '#ffffff',
   logoBordeRedondeado: 8,
 
   // --- Título ---
-  tituloTexto: 'Proyecto - OILTANKING/EBYTEM - PUERTO ROSALES',
+  tituloTexto: 'Proyecto - AI77 - EPC UAM ALVS ODV-ALLEN, RÍO NEGRO',
   tituloTamaño: 24,
   tituloColor: '#070707',
 

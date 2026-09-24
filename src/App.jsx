@@ -27,14 +27,11 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col">
-      {/* Encabezado a lo ancho de toda la pantalla */}
       <header className="w-full bg-slate-900 border-b border-slate-800">
         <Header info={data?.headerInfo} />
       </header>
 
-      {/* Contenido Principal */}
       <main className="flex-1 max-w-7xl w-full mx-auto p-4 md:p-8 space-y-6">
-        {/* Selector de Archivo en Modo Oscuro */}
         <div className="bg-slate-900/90 p-6 rounded-2xl shadow-lg border border-slate-800 text-center">
           <label className="block text-sm font-semibold text-slate-300 mb-2">
             Cargar Planilla de Seguimiento (.xlsx)
@@ -54,12 +51,8 @@ function App() {
           {errorMessage && <p className="mt-3 text-sm text-red-400 font-semibold">{errorMessage}</p>}
         </div>
 
-        {/* Dashboard de Avances en Cuadrícula */}
         {data && (
-          <AvanceTareas
-            summaryInfo={data.summaryInfo}
-            tasks={data.tasks}
-          />
+          <AvanceTareas categories={data.categories} />
         )}
       </main>
     </div>
